@@ -1,8 +1,8 @@
 {
     "name": "nsp-utils",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "NSP项目工具库",
-    "main": "src/index.js",
+    "main": "dist/index.js",
     "scripts": {
         "build": "tsc"
     },
