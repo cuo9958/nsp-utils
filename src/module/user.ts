@@ -1,5 +1,7 @@
 import request from "../request";
+import config from "config";
 
+const pass_check = config.get("pass_check");
 interface iOpts {
     /**
      * 用户模块的地址，默认:http://127.0.0.1:18900
@@ -29,7 +31,7 @@ export default class {
     async Auth(username: string, token: string) {
         const url = this.domain + "/pub/auth";
         try {
-            const data = await request.get(url, null, { username, token });
+            const data = await request.get(url, null, { username, token, pass_check });
             return data;
         } catch (error) {
             console.log(error);
