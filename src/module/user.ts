@@ -9,13 +9,11 @@ interface iOpts {
     baseUrl?: string;
 }
 
-interface iUser {
-    domain: string;
-}
+
 /**
  * 用户模块提供的可使用方法
  */
-export default class {
+export default class  {
     domain = "http://127.0.0.1:18900/api_user";
 
     constructor(opts: iOpts) {
